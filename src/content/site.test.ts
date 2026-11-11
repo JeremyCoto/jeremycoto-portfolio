@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { NAV_ITEMS, SOCIAL_LINKS } from "@/content/site";
+import { HERO, NAV_ITEMS, SOCIAL_LINKS } from "@/content/site";
 
 describe("site", () => {
   it("shows Instagram, X, GitHub and LinkedIn (no YouTube)", () => {
@@ -18,5 +18,12 @@ describe("site", () => {
   it("has exactly the four final sections: About, Services, Stack and Gear", () => {
     expect(NAV_ITEMS.map((item) => item.label)).toEqual(["About", "Services", "Stack", "Gear"]);
     expect(NAV_ITEMS.map((item) => item.href)).toEqual(["/about", "/services", "/stack", "/gear"]);
+  });
+});
+
+describe("hero", () => {
+  it("leads with scalable software and AI", () => {
+    expect(HERO.title).toBe("Building Scalable Software & AI Solutions.");
+    expect(`${HERO.intro} ${HERO.supporting}`).toMatch(/scalable/i);
   });
 });

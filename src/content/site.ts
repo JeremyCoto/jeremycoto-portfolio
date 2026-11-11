@@ -7,7 +7,7 @@ export const SITE = {
   name: "Jeremy Coto",
   firstName: "Jeremy",
   position: "AI Software Developer",
-  title: "Jeremy Coto - AI software developer in Costa Rica",
+  title: "Jeremy Coto - Building Scalable Software & AI Solutions",
   description:
     "Software developer from Costa Rica building professional websites, intelligent automation systems, AI integrations, SaaS products and MVPs.",
   email: "jeremycoto2003@gmail.com",
@@ -74,11 +74,11 @@ export const NAV_ITEMS: NavItem[] = [
 
 /** Presentación profesional del hero (texto indicado por Jeremy). */
 export const HERO = {
-  title: "Intelligent products, websites, and automation with AI.",
+  title: "Building Scalable Software & AI Solutions.",
   intro:
-    "I’m Jeremy Coto, an independent AI Software Developer building intelligent products, websites, and business processes with AI.",
+    "I’m Jeremy Coto, an independent AI Software Developer from Costa Rica. I build software that is ready to grow and AI solutions that solve real problems – from websites and MVPs to SaaS products, automation systems and AI integrations.",
   supporting:
-    "I combine modern software development, artificial intelligence and automation to create digital products, streamline business operations and turn ideas into functional solutions.",
+    "Scalable means typed code, validated inputs, rules enforced in the database and a structure a team can maintain, so a product keeps working as users and data grow. AI goes where it adds real value – assistants, automated workflows and structured data – with validation and rate limits in place.",
 } as const;
 
 /** Experiencia profesional: solo la que figura en el sitio actual (sin empresas ni clientes). */
