@@ -28,8 +28,9 @@ describe("gear", () => {
       "Belkin Portable Charger 25K",
     ]);
     expect(names("workstation")).toEqual([
-      "ASUS TUF Gaming VG27AQ",
+      "Beats Powerbeats Fit",
       "Sonos Roam 2",
+      "ASUS TUF Gaming VG27AQ",
       "Logitech MX Master 3",
       "LOFREE Flow Lite 100",
       "SIHOO M18 Ergonomic Chair",

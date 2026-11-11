@@ -4,6 +4,7 @@ import type { StaticImageData } from "next/image";
 import airpodsMax from "@/images/gear/airpods-max.jpg";
 import airpodsPro2 from "@/images/gear/airpods-pro-2.jpg";
 import asusVg27aq from "@/images/gear/asus-tuf-vg27aq.jpg";
+import beatsPowerbeatsFit from "@/images/gear/beats-powerbeats-fit.jpg";
 import belkinPowerBank from "@/images/gear/belkin-power-bank-25k.jpg";
 import fireTvStick from "@/images/gear/fire-tv-stick.jpg";
 import ipad10 from "@/images/gear/ipad-10.jpg";
@@ -139,6 +140,22 @@ export const GEAR_CATEGORIES: GearCategory[] = [
     kind: "products",
     items: [
       {
+        name: "Beats Powerbeats Fit",
+        specs: "Noise cancelling · Secure-fit wingtips · Jet Black",
+        description: "Secure-fit wireless earbuds with active noise cancelling to stay focused while I work.",
+        image: beatsPowerbeatsFit,
+        imageAlt: "Beats Powerbeats Fit earbuds and charging case in black",
+        link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B0FPGQZTFB" },
+      },
+      {
+        name: "Sonos Roam 2",
+        specs: "Black",
+        description: "A compact portable speaker for music at home, at my desk and on the go.",
+        image: sonosRoam2,
+        imageAlt: "Sonos Roam 2 portable speaker in black",
+        link: { label: VIEW_PRODUCT, href: "https://www.sonos.com/en-us/shop/roam-2" },
+      },
+      {
         name: "ASUS TUF Gaming VG27AQ",
         specs: "27-inch · QHD 2560 × 1440 · IPS · up to 165Hz",
         description:
@@ -151,14 +168,6 @@ export const GEAR_CATEGORIES: GearCategory[] = [
           href: "https://www.asus.com/us/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg27aq/",
         },
         isReference: true,
-      },
-      {
-        name: "Sonos Roam 2",
-        specs: "Black",
-        description: "A compact portable speaker for music at home, at my desk and on the go.",
-        image: sonosRoam2,
-        imageAlt: "Sonos Roam 2 portable speaker in black",
-        link: { label: VIEW_PRODUCT, href: "https://www.sonos.com/en-us/shop/roam-2" },
       },
       {
         name: "Logitech MX Master 3",

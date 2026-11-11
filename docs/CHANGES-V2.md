@@ -94,3 +94,4 @@ Fotos: ver `research/gear/SOURCES.md`. Enlaces (20 de producto y apps + 15 de do
 
 - Everyday Carry: Belkin Portable Charger 25K (B0GXX52D5Y).
 - Workstation: Logitech MX Master 3 (B07XC2FWD1), LOFREE Flow Lite 100 en Marble (B0DP33XH4X; el enlace era de LOFREE, no Logitech) y silla SIHOO M18 (B07GNDDNMW). Nombres y fotos tomados de cada ficha de Amazon.
+- Workstation: Beats Powerbeats Fit (B0FPGQZTFB, Jet Black) añadido en primer lugar. Orden final: Beats, Sonos, monitor ASUS, MX Master 3, LOFREE Flow Lite 100, SIHOO M18.
