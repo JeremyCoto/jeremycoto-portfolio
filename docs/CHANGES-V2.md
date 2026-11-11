@@ -85,3 +85,7 @@ Fotos: ver `research/gear/SOURCES.md`. Enlaces (20 de producto y apps + 15 de do
 ## Nuevo título (2026-11-10)
 
 - Hero: **"Building Scalable Software & AI Solutions."** con intro y texto de apoyo centrados en software escalable e IA (basados en los servicios y el FAQ existentes, sin datos nuevos). Título del sitio: "Jeremy Coto - Building Scalable Software & AI Solutions".
+
+## Color del cierre (2026-11-10)
+
+- El resplandor final usa la combinación del componente original (azul #2979FF, rosa #FF80AB, naranja #FF6D00, amarillo #FFD600) mezclada con el fondo al 80/72/62/55 % y paradas 34/48/59/70/84: término medio, el color se nota sin dominar. Desvanecido del borde inferior más corto (85 %).
