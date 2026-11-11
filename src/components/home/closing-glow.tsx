@@ -6,15 +6,19 @@ import { useReducedMotion } from "motion/react";
 
 import { AnimatedGradientBackground } from "@/components/ui/animated-gradient-background";
 
-/** Fondo de la página primero (se funde con ella) y luego los tonos del acento. */
+/**
+ * Misma combinación del componente original (azul, rosa, naranja, amarillo), mezclada con el
+ * fondo para un término medio: el color se nota sin dominar la página.
+ */
+const mix = (color: string, amount: number) => `color-mix(in oklab, ${color} ${amount}%, var(--background))`;
 const GLOW_COLORS = [
   "var(--background)",
-  "color-mix(in oklab, var(--accent) 75%, var(--background))",
-  "color-mix(in oklab, oklch(0.62 0.2 290) 65%, var(--background))",
-  "color-mix(in oklab, oklch(0.72 0.15 350) 55%, var(--background))",
-  "color-mix(in oklab, var(--accent) 60%, var(--background))",
+  mix("#2979FF", 80),
+  mix("#FF80AB", 72),
+  mix("#FF6D00", 62),
+  mix("#FFD600", 55),
 ] as const;
-const GLOW_STOPS = [40, 60, 72, 86, 100] as const;
+const GLOW_STOPS = [34, 48, 59, 70, 84] as const;
 
 /** El reproductor de Lottie (y su motor WASM) solo se descarga cuando el gato está por verse. */
 const LottieCat = dynamic(() => import("@/components/home/lottie-cat"), { ssr: false });
@@ -43,7 +47,7 @@ export function ClosingGlow() {
 
   return (
     <div ref={ref} aria-hidden="true" className="relative -mb-32 h-72 sm:h-96">
-      <div className="absolute inset-0 overflow-hidden mask-[linear-gradient(to_bottom,transparent,black_35%,black_70%,transparent)]">
+      <div className="absolute inset-0 overflow-hidden mask-[linear-gradient(to_bottom,transparent,black_30%,black_85%,transparent)]">
         <AnimatedGradientBackground
           gradientColors={GLOW_COLORS}
           gradientStops={GLOW_STOPS}
