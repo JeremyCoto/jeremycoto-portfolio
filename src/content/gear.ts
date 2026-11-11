@@ -4,11 +4,15 @@ import type { StaticImageData } from "next/image";
 import airpodsMax from "@/images/gear/airpods-max.jpg";
 import airpodsPro2 from "@/images/gear/airpods-pro-2.jpg";
 import asusVg27aq from "@/images/gear/asus-tuf-vg27aq.jpg";
+import belkinPowerBank from "@/images/gear/belkin-power-bank-25k.jpg";
 import fireTvStick from "@/images/gear/fire-tv-stick.jpg";
 import ipad10 from "@/images/gear/ipad-10.jpg";
 import laptopBackpack from "@/images/gear/laptop-backpack.jpg";
+import lofreeFlowLite from "@/images/gear/lofree-flow-lite-100.jpg";
+import mxMaster3 from "@/images/gear/logitech-mx-master-3.jpg";
 import macbookAirM4 from "@/images/gear/macbook-air-m4.jpg";
 import playstation5 from "@/images/gear/playstation-5-slim.jpg";
+import sihooM18 from "@/images/gear/sihoo-m18.jpg";
 import sonosRoam2 from "@/images/gear/sonos-roam-2.jpg";
 import thuleCrossbody from "@/images/gear/thule-subterra-crossbody.jpg";
 
@@ -119,6 +123,14 @@ export const GEAR_CATEGORIES: GearCategory[] = [
         link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B0CVNWRVDV" },
         secondaryLink: { label: "thule.com", href: "https://www.thule.com/" },
       },
+      {
+        name: "Belkin Portable Charger 25K",
+        specs: "25,000 mAh · Integrated USB-C cable · Black",
+        description: "A power bank with enough capacity to keep my laptop, phone and earbuds charged on the go.",
+        image: belkinPowerBank,
+        imageAlt: "Belkin 25K portable charger in black with its integrated USB-C cable",
+        link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B0GXX52D5Y" },
+      },
     ],
   },
   {
@@ -147,6 +159,30 @@ export const GEAR_CATEGORIES: GearCategory[] = [
         image: sonosRoam2,
         imageAlt: "Sonos Roam 2 portable speaker in black",
         link: { label: VIEW_PRODUCT, href: "https://www.sonos.com/en-us/shop/roam-2" },
+      },
+      {
+        name: "Logitech MX Master 3",
+        specs: "Advanced wireless mouse",
+        description: "A precise, comfortable mouse with programmable buttons for long development sessions.",
+        image: mxMaster3,
+        imageAlt: "Logitech MX Master 3 wireless mouse in graphite",
+        link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B07XC2FWD1" },
+      },
+      {
+        name: "LOFREE Flow Lite 100",
+        specs: "Low-profile mechanical · Specter linear switches · Marble",
+        description: "A full-size, low-profile mechanical keyboard that keeps my wrists relaxed while I type all day.",
+        image: lofreeFlowLite,
+        imageAlt: "LOFREE Flow Lite 100 low-profile mechanical keyboard in white",
+        link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B0DP33XH4X" },
+      },
+      {
+        name: "SIHOO M18 Ergonomic Chair",
+        specs: "Mesh back · Adjustable headrest and lumbar support",
+        description: "An ergonomic mesh chair with head, back and lumbar support for long hours at the desk.",
+        image: sihooM18,
+        imageAlt: "SIHOO M18 ergonomic mesh office chair",
+        link: { label: VIEW_PRODUCT, href: "https://www.amazon.com/dp/B07GNDDNMW" },
       },
     ],
   },

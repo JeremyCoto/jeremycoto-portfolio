@@ -89,3 +89,8 @@ Fotos: ver `research/gear/SOURCES.md`. Enlaces (20 de producto y apps + 15 de do
 ## Color del cierre (2026-11-10)
 
 - El resplandor final usa la combinación del componente original (azul #2979FF, rosa #FF80AB, naranja #FF6D00, amarillo #FFD600) mezclada con el fondo al 80/72/62/55 % y paradas 34/48/59/70/84: término medio, el color se nota sin dominar. Desvanecido del borde inferior más corto (85 %).
+
+## Gear: 4 productos nuevos (2026-11-10)
+
+- Everyday Carry: Belkin Portable Charger 25K (B0GXX52D5Y).
+- Workstation: Logitech MX Master 3 (B07XC2FWD1), LOFREE Flow Lite 100 en Marble (B0DP33XH4X; el enlace era de LOFREE, no Logitech) y silla SIHOO M18 (B07GNDDNMW). Nombres y fotos tomados de cada ficha de Amazon.

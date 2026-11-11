@@ -25,8 +25,15 @@ describe("gear", () => {
       "Apple iPad",
       "Black Laptop Backpack",
       "Thule Subterra Crossbody 5L",
+      "Belkin Portable Charger 25K",
     ]);
-    expect(names("workstation")).toEqual(["ASUS TUF Gaming VG27AQ", "Sonos Roam 2"]);
+    expect(names("workstation")).toEqual([
+      "ASUS TUF Gaming VG27AQ",
+      "Sonos Roam 2",
+      "Logitech MX Master 3",
+      "LOFREE Flow Lite 100",
+      "SIHOO M18 Ergonomic Chair",
+    ]);
     expect(names("home")).toEqual(["Amazon Fire TV Stick", "PlayStation 5"]);
     expect(names("apps")).toEqual([
       "OpenAI Codex",
