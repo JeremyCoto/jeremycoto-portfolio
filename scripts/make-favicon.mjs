@@ -1,4 +1,4 @@
-// Favicon desde ~/Documents/Jeremy_IMG/IMG_2322.heic (original intacto): cara centrada en círculo.
+// Favicon desde ~/Documents/Jeremy_IMG/IMG_2292.heic (original intacto): cara centrada en círculo.
 // Genera src/app/favicon.ico (16/32/48), src/app/icon.png (512) y src/app/apple-icon.png (180, cuadrado).
 import { execFileSync } from "node:child_process";
 import { mkdtempSync, writeFileSync } from "node:fs";
@@ -6,10 +6,10 @@ import { homedir, tmpdir } from "node:os";
 import { join } from "node:path";
 import sharp from "sharp";
 
-const SOURCE = join(homedir(), "Documents", "Jeremy_IMG", "IMG_2322.heic");
+const SOURCE = join(homedir(), "Documents", "Jeremy_IMG", "IMG_2292.heic");
 const APP = join(process.cwd(), "src", "app");
 // Recorte más cerrado que el avatar: a 16–32 px la cara debe ocupar casi todo el círculo.
-const FACE_BOX = { left: 1188, top: 1340, width: 1040, height: 1040 };
+const FACE_BOX = { left: 1117, top: 1600, width: 1040, height: 1040 };
 
 const jpeg = join(mkdtempSync(join(tmpdir(), "jc-favicon-")), "face.jpg");
 execFileSync("sips", ["-s", "format", "jpeg", SOURCE, "--out", jpeg], { stdio: "ignore" });

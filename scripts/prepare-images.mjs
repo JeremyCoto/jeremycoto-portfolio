@@ -19,8 +19,8 @@ const CROPS = [
   { src: "B3D5FBE6-108D-4804-878F-B1E9C336F438.heic", out: "drive.jpg", box: [0, 252, 3024, 3780] },
   { src: "IMG_2736.heic", out: "sunset.jpg", box: [0, 252, 3024, 3780] },
   { src: "19445B8C-8BA7-4840-AE46-EE9FA79CEA8F.heic", out: "me.jpg", box: [760, 2250, 2080, 2600] },
-  // Foto principal del círculo (IMG_2322): cara centrada con hombros, como el avatar de la referencia.
-  { src: "IMG_2322.heic", out: "avatar.jpg", box: [1108, 1285, 1232, 1232] },
+  // Foto principal del círculo (IMG_2292): cara centrada con hombros, como el avatar de la referencia.
+  { src: "IMG_2292.heic", out: "avatar.jpg", box: [887, 1458, 1500, 1500] },
 ];
 
 for (const { src, out, box } of CROPS) {
