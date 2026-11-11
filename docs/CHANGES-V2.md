@@ -81,3 +81,7 @@ Fotos: ver `research/gear/SOURCES.md`. Enlaces (20 de producto y apps + 15 de do
 - **Rendimiento:** la entrada de página y de las fotos pasa a CSS (antes ocultaban el contenido hasta hidratar); se quitó Source Serif (no se usaba). Lighthouse móvil en producción: home 95, About 97, Stack 100 (resto 100/100/100).
 - **Deploy:** proyecto Vercel nuevo `jeremycoto` → https://jeremycoto.vercel.app (`vercel.json` con framework Next.js, Node 24.x; `.vercelignore` excluye research y docs).
 - Verificación: Prettier, tsc, ESLint, 29 Vitest, build, interacciones 53/53 en local y en producción.
+
+## Nuevo título (2026-11-10)
+
+- Hero: **"Building Scalable Software & AI Solutions."** con intro y texto de apoyo centrados en software escalable e IA (basados en los servicios y el FAQ existentes, sin datos nuevos). Título del sitio: "Jeremy Coto - Building Scalable Software & AI Solutions".
