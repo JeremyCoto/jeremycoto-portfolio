@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+/* La investigación (incluido el código de la referencia) no forma parte del sitio. */
+@source not "../../research";
+@source not "../../docs";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --blur-xs: 2px;
+
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.75rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 3.5rem;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+}
+
+:root {
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.6321 0.2018 254.09);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.95 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.2 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.7559 0.135 244.32);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .link-underline {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: color-mix(in oklab, var(--muted-foreground) 40%, transparent);
+    transition: text-decoration-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link-underline:hover {
+    text-decoration-color: var(--muted-foreground);
+  }
+
+  /* Logos oscuros de una sola tinta: se invierten en tema oscuro. */
+  .dark .logo-mono {
+    filter: brightness(0) invert(1);
+  }
+}
+
+/* Barra de progreso del avance automático del FAQ. */
+@keyframes faq-auto-bar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.faq-auto-bar {
+  animation-name: faq-auto-bar;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Texto del About que se revela con el scroll (ver components/about/scroll-reveal-text.tsx). */
+.reveal-char {
+  opacity: calc(var(--reveal-from) + (1 - var(--reveal-from)) * clamp(0, (var(--reveal, 1) - var(--s)) * var(--k), 1));
+}
+
+/*
+ * Entrada de página (components/page-enter.tsx). La curva es el resorte `smooth({ duration: 0.6 })`
+ * de Motion muestreado con su propio generador.
+ */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    translate: 0 18px;
+    filter: blur(2px);
+  }
+}
+
+.page-enter {
+  animation: page-enter 600ms
+    linear(
+      0,
+      0.0387,
+      0.1271,
+      0.2361,
+      0.3486,
+      0.4551,
+      0.5509,
+      0.6342,
+      0.7049,
+      0.7638,
+      0.8122,
+      0.8515,
+      0.8832,
+      0.9085,
+      0.9286,
+      0.9445,
+      0.957,
+      0.9667,
+      0.9743,
+      0.9802,
+      0.9848,
+      0.9884,
+      0.9911,
+      0.9932,
+      0.9948,
+      0.996,
+      0.997,
+      0.9977,
+      0.9983,
+      0.9987,
+      1
+    )
+    var(--enter-delay, 0s) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter {
+    animation: none;
+  }
+}
+
+/* Entrada de las fotos (components/photo-card.tsx): resorte `bouncy({ duration: 0.6, extraBounce: 0.15 })`. */
+@keyframes photo-enter {
+  from {
+    opacity: 0;
+    translate: 0 20px;
+  }
+}
+
+.photo-enter {
+  animation: photo-enter 600ms
+    linear(
+      0,
+      0.066,
+      0.225,
+      0.424,
+      0.625,
+      0.802,
+      0.941,
+      1.038,
+      1.097,
+      1.123,
+      1.125,
+      1.11,
+      1.087,
+      1.061,
+      1.037,
+      1.017,
+      1.001,
+      0.991,
+      0.986,
+      0.984,
+      0.985,
+      0.987,
+      0.99,
+      0.994,
+      0.997,
+      0.999,
+      1,
+      1
+    )
+    var(--enter-delay, 0s) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-enter {
+    animation: none;
+  }
+}

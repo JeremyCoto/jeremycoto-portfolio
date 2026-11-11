@@ -1,0 +1,7 @@
+research
+docs
+.next
+node_modules
+*.log
+.env*
+.vercel
